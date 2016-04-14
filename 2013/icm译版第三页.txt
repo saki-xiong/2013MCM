@@ -1,0 +1,18 @@
+要求2：运行您的模型,看看它是如何预测未来地球的健康的。从数据分析估计你的参数,（当然这只是测试和理解模型的元素,不使用它来预测或决策)。你的模型会生产什么样的因素? 它能预测在地球的条件下的状态变化或临界点吗?它能为全球改变地区条件的结果提供警告?模型能否在会决策者做重要政策的时候提供参考?在你的方法和网络属性你的模型考虑了人为因素吗？
+要求3:运用网络建模一个强大的元素是分析网络结构的能力。网络特征可以帮助识别你的模型中的关键节点或关系吗？　　如果是这样,执行这样的分析。你的模型缺少链接或变化的关系中的敏感程度有多强?  你的模型使用了反馈回路或者考虑了不确定性影响吗？
+你的模型考虑了数据收集问题吗?       你的模型能对各种政府政策做出反应和吗？这样能有助于计划制订吗？
+要求4:写20页的报告(汇总表不计入20页),解释了你的模型及其潜力。一定要详细介绍模型的优缺点。你的上司将会使用你的报告作为一个即将举行的研讨会主要的主题,如果它对于行星健康建模是适当的,深刻的,会要求你出席即将举行的研讨会。祝你在你的网络建模　　工作中好运!
+
+潜在的有用的参考资料:
+Anthony D. Barnosky, Elizabeth A. Hadly, Jordi Bascompte, Eric L. Berlow, James H. Brown, 
+Mikael Fortelius, Wayne M. Getz, John Harte, Alan Hastings, Pablo A. Marquet, Neo D. 
+Martinez, Arne Mooers, Peter Roopnarine, Geerat Vermeij, John W. Williams, Rosemary 
+Gillespie, Justin Kitzes, Charles Marshall, Nicholas Matzke, David P. Mindell, Eloy Revilla, 
+Adam B. Smith. "Approaching a state shift in Earth's biosphere,". Nature, 2012; 486 (7401): 52 
+DOI: 10.1038/nature11018 
+Donella Meadows, Jorgen Randers, and Dennis Meadows. Limits to Growth: The 30-year 
+update, 2004. 
+Robert Watson and A.Hamid Zakri. UN Millennium Ecosystem Assessment Synthesis Report, 
+United Nations Report, 2005. 
+University of California - Berkeley. "Evidence of impending tipping point for Earth." 
+ScienceDaily, 6 Jun. 2012. Web. 22 Oct. 2012.  

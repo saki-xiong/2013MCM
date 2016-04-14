@@ -1,0 +1,52 @@
+clc,clear,hold off;
+L=1.2;
+x0=5;y0=5; 
+theta=(15/180)*pi;
+
+    %for theta=((15:40)/180)*pi
+        x1(:,1)=[x0;x0];y1(:,1)=[y0;y0];z1(:,1)=[0;L];L(1)=L;
+        for n=2:7
+            L(n)=L(n-1)*0.8^(n-1);
+        end
+        for n=1:6
+            for m=1:2:2^n
+                 r=L(n)*sin(theta);
+                 fi=((rand(1)*180)/180)*(pi)-pi/2;
+                 x2(:,m)=x1(:,1);y2(:,m)=y1(:,1);z2(:,m)=z1(:,1);
+                 x2(:,m+1)=x2(:,m);y2(:,m+1)=y2(:,m);z2(:,m+1)=z2(:,m);
+                 
+                 x2(3,m)=x1(2,1)+r*sin(L(n+1)*fi/r);
+                 x2(3,m+1)=x1(2,1)-r*sin(L(n+1)*fi/r);
+                 
+                 
+                 y2(3,m)=y1(2,1)-L(n)*cos(theta)+r*cos(theta)*(1-cos(L(n+1)*fi/r));
+                 y2(3,m+1)=y2(2,1)+L(n)*cos(theta)-r*cos(theta)*(1+cos(L(n+1)*fi/r))
+                 
+                 
+                 z2(3,m)=L(n)-r*sin(theta)*(1-cos(L(n+1)*fi/r))+z1(2,1);
+                 z2(3,m+1)=z1(2,1)+L(n+1)*cos(2*theta)+r*sin(theta)*(1-cos(L(n+1)*fi/r));
+                 
+                 plot3(x2(:,m)',y2(:,m)',z2(:,m)');hold on;plot3(x2(:,m+1)',y2(:,m+1)',z2(:,m+1)');
+                 
+                 grid on;axis([0 8 0 8 0 5]);
+                 
+                 x1(:,1)=[];y1(:,1)=[];z1(:,1)=[]; 
+                 
+            end
+             
+             x1=zeros(3,m+1);y1=zeros(3,m+1);z1=zeros(3,m+1);
+             x1(1,:)=x2(2,:);x1(2,:)=x2(3,:);
+             y1(1,:)=y2(2,:);y1(2,:)=y2(3,:);
+             z1(1,:)=z2(2,:);z1(2,:)=z2(3,:);
+        end
+        
+       
+                
+    %end
+%end
+
+for i=1:2^n
+    plot3(x2(3,i),y2(3,i),z2(3,i),'gh','markersize',40);
+    plot3(x2(3,i),y2(3,i),0,'ro');
+end
+

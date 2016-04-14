@@ -1,0 +1,21 @@
+function f=draw1(x,y,z,X1,Y1,Z1)
+for m=1:8
+    for n=1:4
+        xx1=[x0(n) x(m,n) X1(m,n)];
+        yy1=[y0(n) y(m,n) Y1(m,n)];
+        zz1=[fz   z(m,n)  Z1(m,n)];
+        %xx2=[x0(n) x0(n) x2(n)];yy2=[y0(n) y0(n) y2(n)];
+        if n>1
+            zz1=[z(m,(n-1)) z(m,n) Z1(m,n)];
+            %zz2=[z(m,(n-1)) z(m,n) z2(m,n)];
+            plot3(xx1,yy1,zz1);hold on;%plot3(xx2,yy2,zz2);grid on
+            plot3(x1(m,n),y1(m,n),z1(m,n),'gh','markersize',20);%plot3(x1(n),y1(n),0,'ro');
+            %plot3(x2(m,n),y2(m,n),z2(m,n),'gh','markersize',20);%plot3(x2(n),y2(n),0,'ro');
+%       else
+%           zz1=[0 z(1) z1(1)];zz2=[0 z(1) z2(1)];
+        end
+       
+    end
+end
+
+        view(-37.5,10);hold on

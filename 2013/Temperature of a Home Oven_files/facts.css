@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* What's the frequency Kenneth? */
+
+@import url("../plainvanilla.css");
+
+/* You're just like crosstown traffic. So hard to get through to you. */
+
+body {
+  margin: 0px auto;
+  max-width: 720px;
+  padding: 24px 48px;
+  background-image: none;
+}
+
+.box {
+  margin-right: auto;
+  margin-left: auto;
+  width: 480px;
+}
+
+table td { text-align: center; }
+table th { text-align: center; }
+
+table.results    { }
+table.results th { background-color:#CcCcCc; text-align: center; }
+Table.results td { background-color:#FfFfCc; text-align: center; }
+
+/* No Condition Is Permanent. */
